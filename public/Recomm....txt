@@ -1,0 +1,7 @@
+
+La recupération des données par num de suivi
+
+Empêcher l'affichage du mot de passe lors de la récupération et l'enregistrement  du formulaire
+
+Créer une apparence lors de l'impression + lors de la récupération (unilu site)
+

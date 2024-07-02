@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Agence de Transfert</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="title"><img src="./images/Logo.png" alt=""></div>
+                <div id="menu-icon" class="menu-icon">&#9776;</div>
+                <nav class="menu">
+                    <a href="#accueil">HOME</a>
+                    <a href="#a-propos">ABOUT</a>
+                    <a href="#services">SERVICES</a>
+                    <a href="#zones-tarifs">NOS TARIFS</a>
+                    <a href="./Transaction.html">NUMERO BL</a>
+                    <a href="#contact">CONTACT</a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="accueil" class="hero">
+            <h1>BIENVENU !</h1>
+        </section>
+
+        <section id="a-propos" class="content">
+            <h2>À PROPOS</h2>
+            <p style="text-align: justify">
+                Nous sommes une agence de fret maritime internationale créé en
+                20... dont la direction principale se trouve dans la ville....
+                de en....; fort et nous faisons le transport des produits de
+                tout genre en provence et en direction des pays ci-après :
+            </p><br>
+            <p class="pays">
+                <ul>
+                    <li>ABC</li>
+                    <li>DEF</li>
+                    <li>GHI</li>
+                    <li>JKL</li>
+                    <li>MNO</li>
+                </ul>
+            </p>
+        </section>
+
+        <section id="services" class="content">
+            <h2>SERVICES</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="./images/Formulaire.png"
+                        alt="Service 4">
+                    <h3>FORMULAIRES</h3>
+                    <div class="info">Description du service en détails</div>
+                </div>
+                <div class="service">
+                    <img src="./images/Colis.jpg" alt="Service
+                        2" />
+                    <h3>CHECKING DU COLIS</h3>
+                </div>
+                <div class="service">
+                    <img src="./images/Fret-Maritime-1-1024x981.jpg"
+                        alt="Service 4">
+                    <h3>Service 4</h3>
+                    <div class="info">Description du service en détails</div>
+                </div>
+                <div class="service">
+                    <img src="https://via.placeholder.com/400x300" alt="Service
+                        2" />
+                    <h3>Service 2</h3>
+                    <div class="info">Description du service en détails</div>
+                </div>
+                <div class="service">
+                    <img src="./images/Fret-Maritime-1-1024x981.jpg"
+                        alt="Service 4">
+                    <h3>Service 4</h3>
+                    <div class="info">Description du service en détails</div>
+                </div>
+                <div class="service">
+                    <img src="https://via.placeholder.com/400x300" alt="Service
+                        2" />
+                    <h3>Service 2</h3>
+                    <div class="info">Description du service en détails</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="zones-tarifs" class="content table-section">
+            <h2>ZONES & TARIFS</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lieu</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lubumbashi</td>
+                        <td>100.000 FC</td>
+                    </tr>
+                    <tr>
+                        <td>Kinshasa</td>
+                        <td>100.000 FC</td>
+                    </tr>
+                    <tr>
+                        <td>Brazzaville</td>
+                        <td>100.000 FC</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact" class="content contact-section">
+            <h2>CONTACTS</h2>
+            <div class="contact-container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="need">Besoin</label>
+                        <input type="text" id="need" name="need" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="envoi">Envoyer</button>
+                </form>
+                <div class="map">
+                    <!-- Intégration de la carte ici -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1314178657217!2d27.4847049745821!3d-11.685097535271387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19723ef6dce4d291%3A0x336118c6e5663da9!2sCyber%20caf%C3%A9%20100%20mega!5e0!3m2!1sfr!2scd!4v1719524231690!5m2!1sfr!2scd"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="social-icons">
+                    <a href="#" title="Facebook"><img
+                            src="images/facebook-square-logo-24.png"
+                            alt="Facebook" /></a>
+                    <a href="#" title="Twitter"><img
+                            src="images/twitter-logo-24.png"
+                            alt="Twitter" /></a>
+                    <a href="#" title="Instagram"><img
+                            src="images/instagram-logo-24.png"
+                            alt="Instagram" /></a>
+                    <a href="#" title="Linkedin"><img
+                            src="images/linkedin-logo-24.png"
+                            alt="Linkedin" /></a>
+                </div>
+                <div class="address">
+                    <p>123 Avenue *******, Ville de Lubumbashi, RDC</p>
+                    <p><a href="tel:+243999168605">Tél : +243999168605</a></p>
+                    <p><a href="mailto:contact@example.com">Email : contact@example.com</a></p>
+                </div>
+                <div class="copyright">
+                    <hr>
+                    <p>&copy; 2024 STShipping Line. Tous droits réservés.</p>
+                    <a href="tel:+243812539000"><p class="design" title="Appelez le Développeur de ce site">Designed by Mister KOLUJ</p></a>
+                </div>
+            </div>
+        </footer>
+        <!-- scroll reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- Typed js -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="script.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,440 @@
+﻿/* Reset des styles et variables */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1f242d;
+  color: #fff;
+  line-height: 1.6;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background-color: #0e347a;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title img {
+  filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+  width: 80%;
+  height: 10%;
+}
+
+.menu-icon {
+  display: none; /* Cacher le menu-icon par défaut */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #6ab04c;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 365px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: " ";
+  background-image: url('./images/IMG-20240628-WA0024.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 4.9rem;
+  margin-bottom: 20px;
+  color: goldenrod;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content {
+  background-color: #1f242d;
+  padding: 100px;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 7%;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.content ul li:before {
+  content: "\2022";
+  color: #6ab04c;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background-color: #323946;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  filter: brightness(0.7);
+  transition: 2s ease;
+}
+
+.service img:hover {
+  transform: scale(1.1);
+}
+
+.service h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.service .info {
+  font-size: 1.4rem;
+}
+
+.table-section {
+  background-color: #323946;
+  padding: 100px;
+  user-select: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #6ab04c;
+  padding: 10px;
+}
+
+th {
+  background-color: #6ab04c;
+  color: #fff;
+}
+
+/* Styles pour la section Contacts */
+.contact-section {
+  background-color: #1f242d;
+  padding: 40px 20px;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+form {
+  background-color: #323946;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.4rem;
+  border: 1px solid #6ab04c;
+  border-radius: 4px;
+  background-color: #1f242d;
+  color: #fff;
+  resize: none;
+}
+
+.contact-container .envoi {
+  padding: 10px;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-content a img {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.footer-content a img:hover {
+  background-color: #6ab04c;
+}
+
+.map {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Styles pour la navigation responsive */
+@media (max-width: 968px) {
+  .menu {
+    display: none; /* Masquer le menu principal par défaut */
+    position: absolute;
+    top: 0; /* Ajuster en fonction de la hauteur de votre barre de navigation */
+    text-align: center;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px 20px;
+    z-index: 999;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .menu.active {
+    display: flex; /* Afficher le menu lorsqu'il est activé */
+    flex-direction: column;
+  }
+
+  .menu-icon {
+    font-size: 2.7em;
+    display: block; /* Afficher le menu-icon seulement sur les petits écrans */
+  }
+
+  .hero {
+    text-align: center;
+    padding: 243px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: " ";
+    background-image: url('./images/Fret-Maritime-1-1024x981.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: goldenrod;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 50px 20px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 150px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .service h3 {
+    font-size: 1.5rem;
+  }
+
+  .service .info {
+    font-size: 1rem;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem;
+  }
+
+  .footer-content {
+    font-size: 0.8rem;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #323946;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.address {
+  margin-bottom: 10px;
+}
+
+.address p a {
+  text-decoration: none;
+  color: white;
+}
+
+.copyright {
+  margin-top: 5%;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.copyright hr {
+  margin: 2em auto 0;
+  filter: brightness(0.3);
+  width: 80%;
+}
+
+.copyright .design {
+  color: aquamarine;
+}
+
+a {
+  text-decoration: none;
+}
